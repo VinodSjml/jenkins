@@ -2,12 +2,12 @@ pipeline {
     agent any
     stages {
         stage('stage one'){
-            steps {
-                sh ' create ec2 instance '
+            'steps' {
+                sh "echo stage one"
             }
         stage('stage two'){
             steps {
-                sh 'configure the ip'
+                sh "echo stage two"
             }
         }
         }
