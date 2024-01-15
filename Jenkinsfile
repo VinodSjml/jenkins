@@ -4,8 +4,8 @@ pipeline {
         ENV_URL = "aws.com"
     }
     parameters {
-        string (name: 'component', defaultvalue: 'mongodb' )
-        choice (name: 'env', choices:['dev', 'prod'])
+        string (name: 'component', defaultValue: 'mongodb' )
+        choice (name: 'env', choices:['dev', 'prod'], defaultValue: 'dev')
     }
     stages {
         stage('stage one') {
