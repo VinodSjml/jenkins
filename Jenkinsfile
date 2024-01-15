@@ -5,7 +5,7 @@ pipeline {
     }
     parameters {
         string (name: 'component', defaultValue: 'mongodb' )
-        choice (name: 'env', choices:['dev', 'prod'], defaultValue: 'dev')
+        choice (name: 'env', choices:['dev', 'prod'])
     }
     stages {
         stage('stage one') {
