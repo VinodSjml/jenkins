@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        URL = "aws.com"
+        ENV_URL = "aws.com"
     }
     stages {
         stage('stage one'){
