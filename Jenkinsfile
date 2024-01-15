@@ -2,11 +2,11 @@ pipeline {
     agent any
     stages{
         stage ('stage one'){
-            steps{
+            steps {
                 sh " create ec2 instance "
             }
         stage ('stage two'){
-            steps{
+            steps {
                 sh " configure the ip "
             }
         }    
