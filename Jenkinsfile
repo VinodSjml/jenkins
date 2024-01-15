@@ -5,11 +5,12 @@ pipeline {
             steps {
                 echo "stage one"
             }
+        }
         stage('stage two'){
             steps {
                 echo "stage two"
             }
         }
-        }
+        
     }
 }               
