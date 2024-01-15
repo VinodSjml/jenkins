@@ -8,7 +8,7 @@ pipeline {
         choice (name: 'env', choices:['dev', 'prod'])
     }
     triggers{
-        pollSCM('*/1 * * * 1-5')
+        cron('*/1 * * * 1-5')
     }
     stages {
         stage('stage one') {
