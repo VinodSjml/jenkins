@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('stage one'){
             steps {
-                sh " create ec2 instance "
+                sh ' create ec2 instance '
             }
         stage('stage two'){
             steps {
-                sh " configure the ip "
+                sh 'configure the ip'
             }
-        }    
+        }
         }
     }
-}
+}               
