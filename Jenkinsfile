@@ -6,8 +6,7 @@ pipeline {
     stages {
         stage('stage one'){
             steps {
-                sh ''' 
-                echo stage one
+                sh ''' echo stage one
                 the website is ${ENV_URL} '''
             }
         }
