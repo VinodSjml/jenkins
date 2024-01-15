@@ -1,14 +1,23 @@
 pipeline {
     agent any
+    environment {
+        URL = "aws.com"
+    }
     stages {
         stage('stage one'){
             steps {
-                echo "stage one"
+                sh ''' echo stage one
+                and the website is ${URL} '''
             }
         }
         stage('stage two'){
+            environment{
+                instance_type = "t2.micro"
+            }
             steps {
-                echo "stage two"
+                sh ''' echo stage two
+                and type of instance is ${instance_type} '''
+
             }
         }
         
