@@ -13,10 +13,12 @@ pipeline {
         stage('stage two') {
             environment {
                 instance_type = "t2.micro"
+                ENV_URL = "azure.com"
             }
             steps {
                 sh '''echo stage two
-                echo type of instance is ${instance_type}'''
+                echo type of instance is ${instance_type}
+                echo website is ${ENV_URL}'''
 
             }
         }
