@@ -15,9 +15,8 @@ pipeline {
                 instance_type = "t2.micro"
             }
             steps {
-                sh ''' 
-                echo stage two
-                type of instance is ${instance_type} '''
+                sh "echo stage two"
+                sh "echo type of instance is ${instance_type}"
 
             }
         }
