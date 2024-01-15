@@ -7,9 +7,7 @@ pipeline {
         string (name: 'component', defaultValue: 'mongodb' )
         choice (name: 'env', choices:['dev', 'prod'])
     }
-    triggers{
-        cron('*/1 * * * 1-5')
-    }
+    
     stages {
         stage('stage one') {
             steps {
