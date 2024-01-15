@@ -6,8 +6,10 @@ pipeline {
     stages {
         stage('stage one'){
             steps {
-                sh ''' echo stage one
-                and the website is ${URL} '''
+                sh ''' 
+                echo stage one
+                and the website is ${URL} 
+                '''
             }
         }
         stage('stage two'){
@@ -15,8 +17,10 @@ pipeline {
                 instance_type = "t2.micro"
             }
             steps {
-                sh ''' echo stage two
-                and type of instance is ${instance_type} '''
+                sh ''' 
+                echo stage two
+                and type of instance is ${instance_type} 
+                '''
 
             }
         }
