@@ -8,7 +8,7 @@ pipeline {
             steps {
                 sh ''' 
                 echo stage one
-                and the website is ${URL} 
+                the website is ${ENV_URL} 
                 '''
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 sh ''' 
                 echo stage two
-                and type of instance is ${instance_type} 
+                type of instance is ${instance_type} 
                 '''
 
             }
