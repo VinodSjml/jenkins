@@ -33,5 +33,20 @@ pipeline {
                 }
          
              }
+        
         }
-}   }            
+        stage(sequentital){
+            stage('sq one'){
+                steps {
+                    sh "echo sq 1"
+                }    
+            }
+            stage('sq two'){
+                steps {
+                    sh "echo sq 2"
+                }
+            }
+
+        }
+    }
+}              
