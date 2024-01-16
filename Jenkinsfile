@@ -35,7 +35,7 @@ pipeline {
              }
         
         }
-        stage(sequentital){
+        stage('sequentital'){
             stage('sq one'){
                 steps {
                     sh "echo sq 1"
