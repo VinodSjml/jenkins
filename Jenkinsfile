@@ -11,7 +11,6 @@ pipeline {
         maven 'mvn-3.9.6'
     }
     stages {
-        stage('sequence') {
             stage('sq one') {
                 steps {
                     sh "echo sq one"
@@ -22,7 +21,6 @@ pipeline {
                     sh "echo sq two"
                 }
             }
-        }
         stage('parallel'){
             parallel{
                 stage('stage one') {
