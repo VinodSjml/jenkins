@@ -7,7 +7,9 @@ pipeline {
         string (name: 'component', defaultValue: 'mongodb' )
         choice (name: 'env', choices:['dev', 'prod'])
     }
-    
+    tools {
+        maven 'mvn-3.9.6'
+    }
     stages {
         stage('stage one') {
             steps {
@@ -23,8 +25,8 @@ pipeline {
             steps {
                 sh '''echo stage two
                 echo type of instance is ${instance_type}
-                echo website is ${ENV_URL}'''
-
+                echo website is ${ENV_URL}
+                maven -v'''
             }
         }
         
