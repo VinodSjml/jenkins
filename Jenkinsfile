@@ -30,7 +30,8 @@ pipeline {
                     echo website is ${ENV_URL}
                     mvn -v'''
                     }
-            }
+                }
+         
+             }
         }
-    }
-}  }            
+}   }            
