@@ -26,7 +26,7 @@ pipeline {
                 sh '''echo stage two
                 echo type of instance is ${instance_type}
                 echo website is ${ENV_URL}
-                maven -v'''
+                mvn -v'''
             }
         }
         
