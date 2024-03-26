@@ -17,10 +17,9 @@ pipeline {
         //             }
         //         }
         //     }
-
-        stage('Creating-EKS') {
-            steps {
-                dir('EKS') {  git branch: 'main', url: 'https://github.com/VinodSjml/kubernetes.git'
+           stage('Creating-EKS') {
+             steps {
+                dir('EKS') {  git branch: 'main', url: 'https://github.com/b55-clouddevops/kubernetes.git'
 
                         sh ''' 
                             cd eks 
@@ -31,6 +30,7 @@ pipeline {
                      }
                  }
             }
+
                 
         }    
     }                        
